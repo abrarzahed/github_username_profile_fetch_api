@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #eee;
+        font-family: sans-serif;
+        color: #444;
+      }
+      .container {
+        width: 90%;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      .card {
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+        gap: 12px;
+      }
+      img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      h1 {
+        text-align: center;
+        margin: 20px auto;
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+      h3 {
+        text-align: center;
+        font-size: 40px;
+        margin: 40px auto;
+      }
+      button:hover {
+        background: red;
+      }
+      #testDiv {
+        width: 300px;
+        height: 300px;
+        display: grid;
+        place-content: center;
+        background: lime;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Username and profile picture by using github users api</h1>
+    <h3>Loading...</h3>
+    <div class="container"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
